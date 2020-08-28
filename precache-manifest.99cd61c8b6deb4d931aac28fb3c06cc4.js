@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0b8ea9e18256e81756b8c2400df836c2",
+    "revision": "7b806d2c8528ae54b8c73525e21bd7bf",
     "url": "/CIn-Open-Source.io/index.html"
   },
   {
-    "revision": "46a4e1ab424790ecf4f4",
+    "revision": "4c5bb34b7d5f4ee6d3c1",
     "url": "/CIn-Open-Source.io/static/css/main.0b524e80.chunk.css"
   },
   {
-    "revision": "925f143f143a82c80fa8",
-    "url": "/CIn-Open-Source.io/static/js/2.33b78f6b.chunk.js"
+    "revision": "f05d7d297e8c129cfedf",
+    "url": "/CIn-Open-Source.io/static/js/2.5fda094f.chunk.js"
   },
   {
     "revision": "620b6970168baa48a46cfe25839f99f3",
-    "url": "/CIn-Open-Source.io/static/js/2.33b78f6b.chunk.js.LICENSE.txt"
+    "url": "/CIn-Open-Source.io/static/js/2.5fda094f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "46a4e1ab424790ecf4f4",
-    "url": "/CIn-Open-Source.io/static/js/main.b9f52c14.chunk.js"
+    "revision": "4c5bb34b7d5f4ee6d3c1",
+    "url": "/CIn-Open-Source.io/static/js/main.d785b231.chunk.js"
   },
   {
     "revision": "7a6956e196ccd2e4ccc8856708b02847",
-    "url": "/CIn-Open-Source.io/static/js/main.b9f52c14.chunk.js.LICENSE.txt"
+    "url": "/CIn-Open-Source.io/static/js/main.d785b231.chunk.js.LICENSE.txt"
   },
   {
     "revision": "c6529894c43d9c6a2eab",
@@ -62,10 +62,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "75f7ab18f707114d817522df8dea0a3b",
     "url": "/CIn-Open-Source.io/static/media/promo-1.75f7ab18.png"
-  },
-  {
-    "revision": "230071328b705f8686cabd26a85ed6a5",
-    "url": "/CIn-Open-Source.io/static/media/team-4-800x800.23007132.jpg"
   },
   {
     "revision": "b901db90100ed2f5a9425a3647646576",

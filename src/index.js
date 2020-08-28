@@ -15,42 +15,53 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React, { useState } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import "assets/vendor/nucleo/css/nucleo.css";
-import "assets/vendor/font-awesome/css/font-awesome.min.css";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 import "assets/scss/argon-design-system-react.scss?v1.1.0";
+import "assets/css/argon-design-system-react.css";
 
-import Index from "views/Index.js";
-import Landing from "views/examples/Landing.js";
-import Login from "views/examples/Login.js";
-import Profile from "views/examples/Profile.js";
-import Register from "views/examples/Register.js";
+import Landing from "views/pages/Landing.js";
+import Project from "views/pages/Project.js";
 
-ReactDOM.render(
-  <BrowserRouter>
-    <Switch>
-      <Route path="/" exact render={props => <Index {...props} />} />
-      <Route
-        path="/landing-page"
-        exact
-        render={props => <Landing {...props} />}
-      />
-      <Route path="/login-page" exact render={props => <Login {...props} />} />
-      <Route
-        path="/profile-page"
-        exact
-        render={props => <Profile {...props} />}
-      />
-      <Route
-        path="/register-page"
-        exact
-        render={props => <Register {...props} />}
-      />
-      <Redirect to="/" />
-    </Switch>
-  </BrowserRouter>,
-  document.getElementById("root")
-);
+import { ThemeContext, themes } from "./views/themes/theme-context.js";
+
+library.add(fab);
+library.add(fas);
+
+const App = () => {
+  const [theme, toggleTheme] = useState(themes.dark);
+  const value = { theme, toggleTheme };
+
+  return (
+    <>
+      <Helmet>
+        <style>
+          {"body { background-color: #" + theme.background_color + "; }"}
+        </style>
+      </Helmet>
+      <ThemeContext.Provider value={value}>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/" exact render={(props) => <Landing {...props} />} />
+            <Route
+              path="/project/:id"
+              exact
+              render={(props) => <Project {...props} />}
+            />
+            <Redirect to="/" />
+          </Switch>
+        </BrowserRouter>
+      </ThemeContext.Provider>
+    </>
+  );
+};
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(<App />, rootElement);

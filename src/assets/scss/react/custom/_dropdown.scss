@@ -1,5 +1,5 @@
 @include media-breakpoint-down(md) {
-  .dropdown-menu.show{
+  .dropdown-menu.show {
     position: static !important;
     will-change: unset !important;
     top: 100% !important;

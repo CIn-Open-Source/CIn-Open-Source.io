@@ -1,0 +1,50 @@
+import React from "react";
+
+export const themes = {
+  light: {
+    background_color: "EDF6F9",
+    cards: "card-theme-light",
+    banner_gradient: "light3",
+    navbar_color: "headroom-light-theme",
+    card1: "middle-green-blue",
+    card_button: "#55A79E",
+    card_button2: "middle-green-blue-light",
+    card2: "middle-green-blue",
+    card3: "middle-green-blue",
+    idea_icon1: "darker-salmon",
+    idea_icon2: "darker-salmon",
+    idea_icon3: "darker-salmon",
+    idea_icon4: "darker-salmon",
+    contribute_icon: "non-photo-blue",
+    contribute_gradient: "bg-gradient-salmon",
+    contribute_banner_gradient: "salmon",
+    titles_color: "",
+    text_color: "",
+  },
+  dark: {
+    background_color: "171719",
+    cards: "card-theme-dark",
+    bottom_cards: "card-theme-dark2",
+    banner_gradient: "dark6",
+    navbar_color: "headroom-dark-theme",
+    card1: "middle-green-blue-dark",
+    card_button: "#55A79E",
+    card_button2: "middle-green-blue-light",
+    card2: "middle-green-blue-dark",
+    card3: "middle-green-blue-dark",
+    idea_icon1: "dark",
+    idea_icon2: "dark",
+    idea_icon3: "dark",
+    idea_icon4: "dark",
+    contribute_icon: "dark",
+    contribute_gradient: "bg-gradient-salmon-dark",
+    contribute_banner_gradient: "dark",
+    titles_color: "light2",
+    text_color: "light2",
+  },
+};
+
+export const ThemeContext = React.createContext({
+  theme: themes.dark,
+  toggleTheme: () => {},
+});

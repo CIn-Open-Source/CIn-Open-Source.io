@@ -1,6 +1,6 @@
 // Alternative colors
 @each $color, $value in $theme-colors {
-    .popover-#{$color} .popover {
-        @include popover-variant($value);
-    }
+  .popover-#{$color} .popover {
+    @include popover-variant($value);
+  }
 }

@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7b806d2c8528ae54b8c73525e21bd7bf",
+    "revision": "b2a2100dd2da7fdbe1931c5643ec07fa",
     "url": "/CIn-Open-Source.io/index.html"
   },
   {
-    "revision": "4c5bb34b7d5f4ee6d3c1",
+    "revision": "9bfb6ef07a53013a8183",
     "url": "/CIn-Open-Source.io/static/css/main.0b524e80.chunk.css"
   },
   {
@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/CIn-Open-Source.io/static/js/2.5fda094f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4c5bb34b7d5f4ee6d3c1",
-    "url": "/CIn-Open-Source.io/static/js/main.d785b231.chunk.js"
+    "revision": "9bfb6ef07a53013a8183",
+    "url": "/CIn-Open-Source.io/static/js/main.c7d3a6a0.chunk.js"
   },
   {
     "revision": "7a6956e196ccd2e4ccc8856708b02847",
-    "url": "/CIn-Open-Source.io/static/js/main.d785b231.chunk.js.LICENSE.txt"
+    "url": "/CIn-Open-Source.io/static/js/main.c7d3a6a0.chunk.js.LICENSE.txt"
   },
   {
     "revision": "c6529894c43d9c6a2eab",

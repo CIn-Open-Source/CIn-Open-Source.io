@@ -21342,6 +21342,10 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   vertical-align: middle;
 }
 
+.icon-theme {
+  color: #00646d;
+}
+
 .docs {
   background: #fff;
 }

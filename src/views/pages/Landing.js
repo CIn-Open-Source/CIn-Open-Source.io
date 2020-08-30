@@ -93,7 +93,7 @@ function Landing() {
             <Row className="justify-content-center">
               <Col lg="12">
                 <span className="display-4 text-white">
-                  Principais projetos:
+                  Alguns projetos:
                 </span>
                 <Row className="row-grid">
                   <Col lg="4">

@@ -52,6 +52,7 @@ function TopNavBar() {
   const [collapseClasses, collapseOpen] = useState();
   const [newCollapseClasses, newCollapseOpen] = useState(0);
   const [nextCollapseClasses, nextCollapseOpen] = useState("");
+  const [id, setId] = useState(1);
 
   useEffect(() => {
     let headroom = new Headroom(document.getElementById("navbar-main"));
@@ -129,7 +130,6 @@ function TopNavBar() {
                       <Media
                         className="d-flex align-items-center"
                         href="/project/1"
-                        target="_blank"
                       >
                         <div className="icon icon-shape bg-gradient-primary rounded-circle text-white">
                           <i className="ni ni-paper-diploma" />

@@ -47,7 +47,7 @@ const App = () => {
         </style>
       </Helmet>
       <ThemeContext.Provider value={value}>
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
           <Switch>
             <Route path="/" exact render={(props) => <Landing {...props} />} />
             <Route
